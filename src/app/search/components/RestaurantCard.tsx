@@ -23,7 +23,9 @@ const RestaurantCard = () => {
 					</div>
 				</div>
 				<div className="text-red-600">
-					<Link href="/">View more information</Link>
+					<Link href="/restaurant/minestones-grill">
+						View more information
+					</Link>
 				</div>
 			</div>
 		</div>
