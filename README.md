@@ -16,3 +16,8 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Client Component, Server Component
+
+- Client Component는 Server Component 안에 포함될 수 있지만 Server Component는 Client Component 안에 포함될 수 없다.
+- 단, Server Component가 Client Component의 children으로 올 때만 포함될 수 있다.
