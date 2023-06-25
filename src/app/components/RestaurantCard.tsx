@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 import { RestaurantCardType } from "../page";
 import Price from "./Price";
-import Reviews from "../restaurant/[slug]/components/Reviews";
 import Stars from "./Stars";
 
 interface Props {
