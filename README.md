@@ -40,3 +40,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - 함수이름은 반드시 `middleware`여야 한다.
 - `middleware.ts` 내에서 `matcher`를 선언함으로서 middleware가 적용될 endpoint를 지정할 수 있다.
 - 회원자격 증명이 요구되는 endpoint에 middleware를 적용하면 모든 endpoint에 일일이 자격 증명 로직을 넣지 않아도 된다.
+
+## Context API
+
+- Server component는 Client component의 자식으로 올 수는 있지만 context api를 사용할 순 없다.

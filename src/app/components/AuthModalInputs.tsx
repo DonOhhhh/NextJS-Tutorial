@@ -1,14 +1,8 @@
 import React from "react";
+import { IUser } from "./AuthModal";
 
 interface Props {
-	inputs: {
-		firstName: string;
-		lastName: string;
-		email: string;
-		phone: string;
-		city: string;
-		password: string;
-	};
+	inputs: IUser;
 	handleChangeInput: (e: React.ChangeEvent<HTMLInputElement>) => void;
 	isSignIn: boolean;
 }

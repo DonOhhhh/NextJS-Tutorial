@@ -13,7 +13,6 @@ function Stars({ reviews, rating }: { reviews: Review[]; rating?: number }) {
 		const fullStars = calcedRating | 0;
 		const halfStars = Math.round(calcedRating - fullStars + Number.EPSILON);
 		const emptyStars = (5 - calcedRating) | 0;
-		// console.log({ fullStars, halfStars, emptyStars });
 		stars.push(
 			...new Array(fullStars).fill(fullStar),
 			...new Array(halfStars).fill(halfStar),
