@@ -1,10 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
 
-export const metadata = {
-	title: "Milestones Grill (Toronto) | OpenTable",
-};
-
 const RestaurantLayout = ({
 	children,
 	params,

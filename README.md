@@ -44,3 +44,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Context API
 
 - Server component는 Client component의 자식으로 올 수는 있지만 context api를 사용할 순 없다.
+
+## Availablity System 구축
+
+### Ground Rules
+
+1. Avaiability is based off tables
+2. Tables can only have 2 or 4 seats
+3. You can combine tables together for larger bookings

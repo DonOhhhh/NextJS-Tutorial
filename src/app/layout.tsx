@@ -2,6 +2,8 @@ import AuthContext from "@/context/AuthContext";
 import NavBar from "./components/NavBar";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import "react-datepicker/dist/react-datepicker.css";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +18,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
+			<Head>
+				<title>OpenTable</title>
+				<link rel="icon" href="./favicon.ico" sizes="any" />
+			</Head>
 			<body className={inter.className}>
 				<main className="bg-gray-100 min-h-screen w-screen">
 					<AuthContext>
