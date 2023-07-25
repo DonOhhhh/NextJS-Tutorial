@@ -7,6 +7,7 @@ import useAvailabilities from "@/hooks/useAvailabilities";
 import { CircularProgress } from "@mui/material";
 import Link from "next/link";
 import { convertToDisplayTime } from "@/utils/convertToDisplayTime";
+import moment from "moment";
 
 const ReservationCard = ({
 	openTime,
@@ -25,7 +26,7 @@ const ReservationCard = ({
 
 	const handleChange = (date: Date | null) => {
 		if (date) {
-			setDay(date.toISOString().split("T")[0]);
+			setDay(moment(date).format().split("T")[0]);
 			return setSelectedDate(date);
 		}
 		return setSelectedDate(null);

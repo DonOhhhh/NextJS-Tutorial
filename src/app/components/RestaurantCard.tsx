@@ -11,7 +11,7 @@ interface Props {
 const RestaurantCard = ({ restaurant }: Props) => {
 	const { name, cuisine, location, main_img, slug, price } = restaurant;
 	return (
-		<>
+		<div>
 			<Link href={`/restaurant/${slug}`}>
 				<div className="w-64 h-72 m-3 rounded overflow-hidden border cursor-pointer">
 					<img src={main_img} alt="" className="w-full h-36" />
@@ -37,7 +37,7 @@ const RestaurantCard = ({ restaurant }: Props) => {
 					</div>
 				</div>
 			</Link>
-		</>
+		</div>
 	);
 };
 
